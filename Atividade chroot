@@ -1,0 +1,35 @@
+Atividades - chroot
+Questionário
+1. O que é o chroot?
+
+Executa um comando ou um "shell interativo" com um diretório raiz especial. Podem ser especificados
+• Usuário e grupo;
+• Lista de grupos.
+
+2. Explique o funcionamento do chroot
+
+O programa que roda isolado (chrooted) fica confinado ao diretório definido como raiz e aos seus subdiretórios;
+Se o sistema chrooted for comprometido o dano ficará limitado ao conteúdo da jaula;
+A estrutura de diretórios da jaula deverá conter a estrutura mínima para que o comando possa rodar.
+
+3. Quais são os usos do chroot?
+
+Usos para o chroot:
+• Isolar aplicações instáveis e inseguras;
+• Rodar aplicações de 32 bits em sistemas de 64 bits;
+• Testar novos pacotes antes de instalá-los em um sistema de produção;
+• Rodar aplicações antigas em versões mais novas do sistema operacional;
+• Construir novos pacotes permitindo um controle cuidadoso sobre as dependências que estão sendo instaladas.
+
+4. Qual é importância do chroot no contexto de segurança de sistemas operacionais e redes?
+
+• No contexto de segurança de sistemas operacionais e redes, os serviços (daemons) representam risco de comprometimento do sistema;
+• Sempre que for possível é importante rodar esses serviços enjaulados para proteger os servidores nos quais estão rodando.
+
+5. Ainda no contexto de segurança de sistemas operacionais e redes que tipo de aplicação deve ser isolada pelo chroot? Cite exemplos.
+
+A elaboração de um sistema em chroot pode se tornar bastante detalhada dependendo da distribuição Linux e dos programas que serão executados.
+
+6. Percorra o processo de implementação de do Apache enjaulado em um sistema Ubuntu 12.04 LTS (Precise Pangolin) instalado em um sistema com  LinuxMint 17 (Qiana).
+
+(Tá no slide)
